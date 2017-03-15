@@ -1,5 +1,5 @@
 module.exports = {
-  ReduxActions:require('./src/redux-actions'),
-  ReduxReducers:require('./src/redux-reducers'),
-  ReduxStates:require('./src/redux-states'),
+  actions: require('./src/redux-actions'),
+  reducers: require('./src/redux-reducers'),
+  states: require('./src/redux-states'),
 }
