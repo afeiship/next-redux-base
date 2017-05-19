@@ -1,11 +1,10 @@
 var nxStore = require('next-store');
+var objectAssign = require('object-assign');
 var INITIAL_ACTION = '@@redux/INIT';
 
 module.exports = function (inState, inAction) {
   var type = inAction.type;
   var data = inAction.data;
-
-
   var state = type === INITIAL_ACTION ? {
       __root__: inState.root || null,
       __request__: inState.request || {},
@@ -14,13 +13,15 @@ module.exports = function (inState, inAction) {
 
   switch (type) {
     case 'update':
-      return Object.assign(state, data);
+      return objectAssign(state, data);
     case 'root':
-      return Object.assign(state, {__root__: data});
+      return objectAssign(state, {__root__: data});
     case 'request':
-      return Object.assign(state, {__request__: data});
+      var requestData = objectAssign(state.__request__, data);
+      return objectAssign(state, {__request__: requestData});
     case 'memory':
-      return Object.assign(state, {__memory__: data});
+      var memoryData = objectAssign(state.__memory__, data);
+      return objectAssign(state, {__memory__: memoryData});
     case 'session':
     case 'local':
       nxStore.engine = type + 'Storage';
