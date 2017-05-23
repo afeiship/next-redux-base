@@ -7,6 +7,7 @@ module.exports = function (inState, inAction) {
   var data = inAction.data;
   var state = type === INITIAL_ACTION ? {
       __root__: inState.root || null,
+      __error__: inState.error || null,
       __request__: inState.request || {},
       __memory__: inState.memory || {}
     } : inState;
@@ -16,6 +17,8 @@ module.exports = function (inState, inAction) {
       return objectAssign(state, data);
     case 'root':
       return objectAssign(state, {__root__: data});
+    case 'error':
+      return objectAssign(state, {__error__: data});
     case 'request':
       var requestData = objectAssign(state.__request__, data);
       return objectAssign(state, {__request__: requestData});

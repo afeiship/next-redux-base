@@ -6,6 +6,9 @@ module.exports={
   getRoot:function(inStore){
     return inStore.getState().__root__;
   },
+  getError:function(inStore){
+    return inStore.getState().__error__;
+  },
   getMemory:function(inStore){
     return inStore.getState().__memory__;
   },

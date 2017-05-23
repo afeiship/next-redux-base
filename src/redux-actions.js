@@ -5,6 +5,12 @@ module.exports = {
       data:inData
     }
   },
+  error:function(inData){
+    return {
+      type:'error',
+      data:inData
+    }
+  },
   root:function(inData){
     return {
       type:'root',
