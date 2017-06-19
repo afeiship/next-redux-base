@@ -1,4 +1,4 @@
-var nxStore = require('next-store');
+var NxStore = require('next-store');
 module.exports={
   getUpdate:function(inStore){
     return inStore.getState();
@@ -16,11 +16,11 @@ module.exports={
     return inStore.getState().__request__;
   },
   getLocal:function(inKeys){
-    nxStore.engine='localStorage';
-    return nxStore.gets(inKeys);
+    NxStore.engine='localStorage';
+    return NxStore.gets(inKeys);
   },
   getSession:function(inKeys){
-    nxStore.engine='sessionStorage';
-    return nxStore.gets(inKeys);
+    NxStore.engine='sessionStorage';
+    return NxStore.gets(inKeys);
   }
 };

@@ -1,4 +1,4 @@
-var nxStore = require('next-store');
+var NxStore = require('next-store');
 var objectAssign = require('object-assign');
 var INITIAL_ACTION = '@@redux/INIT';
 
@@ -27,17 +27,17 @@ module.exports = function (inState, inAction) {
       return objectAssign(state, {__memory__: memoryData});
     case 'session':
     case 'local':
-      nxStore.engine = type + 'Storage';
-      nxStore.sets(data);
+      NxStore.engine = type + 'Storage';
+      NxStore.sets(data);
       return state;
     case INITIAL_ACTION:
       if (inState.local) {
-        nxStore.engine = 'localStorage';
-        nxStore.sets(inState.local);
+        NxStore.engine = 'localStorage';
+        NxStore.sets(inState.local);
       }
       if (inState.session) {
-        nxStore.engine = 'sessionStorage';
-        nxStore.sets(inState.session);
+        NxStore.engine = 'sessionStorage';
+        NxStore.sets(inState.session);
       }
       break;
   }
