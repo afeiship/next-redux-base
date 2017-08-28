@@ -12,6 +12,6 @@
   "author": "feizheng <1290657123@qq.com>",
   "license": "MIT",
   "dependencies": {
-    "next-store": "github:afeiship/next-store#v1.0.0"
+    "next-store": "github:afeiship/next-store"
   }
 }
