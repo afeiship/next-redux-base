@@ -1,16 +1,21 @@
 var NxStore = require('next-store');
 var objectAssign = require('object-assign');
 var INITIAL_ACTION = '@@redux/INIT';
+var DEFAULT_OPTIONS = { prefix: '' };
 
-module.exports = function (inState, inAction) {
+module.exports = function (inState, inAction, inOptions) {
   var type = inAction.type;
   var data = inAction.data;
+  var options = nx.mix(DEFAULT_OPTIONS, inOptions);
   var state = type === INITIAL_ACTION ? {
-      __root__: inState.root || null,
-      __error__: inState.error || null,
-      __request__: inState.request || {},
-      __memory__: inState.memory || {}
-    } : inState;
+    __root__: inState.root || null,
+    __error__: inState.error || null,
+    __request__: inState.request || {},
+    __memory__: inState.memory || {}
+  } : inState;
+
+  //set preifx:
+  NxStore.config(options.prefix);
 
   switch (type) {
     case 'update':
