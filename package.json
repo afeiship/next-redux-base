@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Redux reducers/actions/states based on nextjs.",
   "main": "index.js",
-  "files":[
+  "files": [
     "src/redux-actions.js",
     "src/redux-reducers.js",
     "src/redux-states.js"
