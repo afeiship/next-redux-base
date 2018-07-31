@@ -4,9 +4,9 @@
   "description": "Redux reducers/actions/states based on nextjs.",
   "main": "index.js",
   "files": [
-    "src/redux-actions.js",
-    "src/redux-reducers.js",
-    "src/redux-states.js"
+    "lib/redux-actions.js",
+    "lib/redux-reducers.js",
+    "lib/redux-states.js"
   ],
   "repository": "git@github.com:afeiship/next-redux-base.git",
   "author": "feizheng <1290657123@qq.com>",

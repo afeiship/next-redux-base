@@ -2,7 +2,7 @@ var NxStore = require('next-store');
 
 NxStore.config(null);
 module.exports = {
-  actions: require('./src/redux-actions'),
-  reducers: require('./src/redux-reducers'),
-  states: require('./src/redux-states')
+  actions: require('./lib/redux-actions'),
+  reducers: require('./lib/redux-reducers'),
+  states: require('./lib/redux-states')
 }
