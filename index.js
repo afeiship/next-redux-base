@@ -5,4 +5,4 @@ module.exports = {
   actions: require('./lib/redux-actions'),
   reducers: require('./lib/redux-reducers'),
   states: require('./lib/redux-states')
-}
+};
