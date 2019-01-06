@@ -12,6 +12,7 @@
   "author": "feizheng <1290657123@qq.com>",
   "license": "MIT",
   "dependencies": {
+    "next-js-core2": "github:afeiship/next-js-core2",
     "next-store": "github:afeiship/next-store"
   }
 }
