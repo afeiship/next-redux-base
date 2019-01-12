@@ -13,6 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "next-js-core2": "github:afeiship/next-js-core2",
+    "next-sets": "github:afeiship/next-sets",
     "next-store": "github:afeiship/next-store"
   }
 }
