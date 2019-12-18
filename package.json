@@ -1,6 +1,6 @@
 {
-  "name": "next-redux-base",
-  "version": "1.0.1",
+  "name": "@feizheng/next-redux-base",
+  "version": "2.0.0",
   "description": "Redux reducers/actions/states based on nextjs.",
   "main": "index.js",
   "files": [
@@ -15,5 +15,8 @@
     "next-js-core2": "github:afeiship/next-js-core2",
     "next-sets": "github:afeiship/next-sets",
     "next-store": "github:afeiship/next-store"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
