@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/next-redux-base",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Redux reducers/actions/states based on nextjs.",
   "main": "index.js",
   "files": [
@@ -12,7 +12,7 @@
   "author": "feizheng <1290657123@qq.com>",
   "license": "MIT",
   "dependencies": {
-    "@feizheng/next-js-core2": "^2.0.5",
+    "@feizheng/next-js-core2": "^2.4.1",
     "@feizheng/next-sets": "^1.0.0",
     "@feizheng/next-store": "^1.0.0"
   },
