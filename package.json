@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/next-redux-base",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Redux reducers/actions/states based on nextjs.",
   "main": "index.js",
   "files": [
