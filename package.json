@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/next-redux-base",
-  "version": "3.0.3",
+  "version": "4.0.0",
   "description": "Redux reducers/actions/states based on nextjs.",
   "main": "index.js",
   "files": [
@@ -14,7 +14,7 @@
   "dependencies": {
     "@feizheng/next-js-core2": "^2.4.1",
     "@feizheng/next-sets": "^1.0.0",
-    "@feizheng/next-store": "^1.0.0"
+    "@feizheng/next-store": "^3.0.2"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
