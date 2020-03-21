@@ -12,9 +12,9 @@
   "author": "feizheng <1290657123@qq.com>",
   "license": "MIT",
   "dependencies": {
-    "@feizheng/next-js-core2": "^2.4.1",
+    "@feizheng/next-js-core2": "^2.4.2",
     "@feizheng/next-sets": "^1.0.0",
-    "@feizheng/next-store": "^3.0.2"
+    "@feizheng/next-store": "^3.1.2"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
