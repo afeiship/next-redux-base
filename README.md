@@ -3,5 +3,5 @@
 
 ## installation
 ```shell
-npm install -S @feizheng/next-redux-base
+npm install -S @jswork/next-redux-base
 ```

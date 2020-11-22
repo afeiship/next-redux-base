@@ -1,6 +1,6 @@
 {
-  "name": "@feizheng/next-redux-base",
-  "version": "4.0.0",
+  "name": "@jswork/next-redux-base",
+  "version": "1.0.0",
   "description": "Redux reducers/actions/states based on nextjs.",
   "main": "index.js",
   "files": [
@@ -9,14 +9,15 @@
     "lib/redux-states.js"
   ],
   "repository": "git@github.com:afeiship/next-redux-base.git",
-  "author": "feizheng <1290657123@qq.com>",
+  "author": "jswork <1290657123@qq.com>",
   "license": "MIT",
   "dependencies": {
-    "@feizheng/next-js-core2": "^2.4.2",
-    "@feizheng/next-sets": "^1.0.0",
-    "@feizheng/next-store": "^3.1.2"
+    "@jswork/next": "^1.0.2",
+    "@jswork/next-sets": "^1.0.0",
+    "@jswork/next-store": "^1.0.1"
   },
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org/"
   }
 }
