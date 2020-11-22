@@ -6,3 +6,4 @@ static
 .gitignore
 yarn.lock
 test
+.release-it.json
